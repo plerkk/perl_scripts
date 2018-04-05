@@ -1,2 +1,2 @@
 # perl_scripts
-some scrips in perl
+some scripts in perl for the sake of study the languaje.
