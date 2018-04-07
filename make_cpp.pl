@@ -44,7 +44,12 @@ foreach(@funcs){
     }else{
         s/ / $class_name\:\:/;
     }
-    s/;/\{\n\n\}/;
+    s/;\s?/\{\n\n\}/;
+    say CPP "$_";
+}
+foreach(@funcsGlobal){
+    s/\s//;
+    s/;\s?/\{\n\n\}/;
     say CPP "$_";
 }
 close CPP;
